@@ -365,7 +365,7 @@ The project notebook is designed to run in Google Colab. Follow the steps below 
 ### 1. Access the Google Colab Notebook
 <p align="justify">
 - Open the project repository and locate `Bejer_Catapang_Eipstein_Person.ipynb`.
-- Download the notebook and upload it to [Google Colab](https://colab.research.google.com/?utm_source=chatgpt.com).
+- Download the notebook and upload it to [Google Colab] https://colab.research.google.com/drive/1BwYS3QwYzbLiyra0j00z2T_GTRTkK1l2?usp=sharing.
 </p>
 
 ### 2. Prepare the Dataset
