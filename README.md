@@ -166,8 +166,7 @@ src="project_outputs/plots/02_documents_histogram.png" width="750" alt="Distribu
 ### 3. Scatter Plot — Flights vs. Documents
 
 <p align="center">
-  <img <img width="862" height="485" alt="Screenshot 2026-10-30 131355" src="https://github.com/user-attachments/assets/b73a9d77-7f15-48bf-a913-43650b733443" />
-<img width="862" height="485" alt="Screenshot 2026-10-30 131355" src="https://github.com/user-attachments/assets/36c7f3b4-b454-46dc-871c-46361845052d" />
+  <img <img width="862" height="485" alt="Screenshot 2026-10-30 131355" src="https://github.com/user-attachments/assets/36c7f3b4-b454-46dc-871c-46361845052d" />
 src="project_outputs/plots/03_flights_vs_documents.png" width="750" alt="Flights vs Documents">
 </p>
 
@@ -180,8 +179,7 @@ src="project_outputs/plots/03_flights_vs_documents.png" width="750" alt="Flights
 ### 4. Bar Chart — Missing Values in the Original Dataset
 
 <p align="center">
-  <img <img width="981" height="477" alt="Screenshot 2026-10-30 131411" src="https://github.com/user-attachments/assets/1296dfeb-3a8e-41df-8bfd-640f77973cb2" />
-<img width="981" height="477" alt="Screenshot 2026-10-30 131411" src="https://github.com/user-attachments/assets/19f93d54-1331-4306-8dc7-d5b35bb3db9f" />
+  <img <img width="981" height="477" alt="Screenshot 2026-10-30 131411"src="https://github.com/user-attachments/assets/19f93d54-1331-4306-8dc7-d5b35bb3db9f" />
 src="project_outputs/plots/04_missing_values.png" width="750" alt="Missing Values in Original Dataset">
 </p>
 
