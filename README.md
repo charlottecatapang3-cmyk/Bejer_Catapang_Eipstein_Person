@@ -140,7 +140,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 1. Histogram — Distribution of Flights
 
 <p align="center">
-  <img src="project_outputs/plots/01_flights_histogram.png" width="750" alt="Distribution of Flights">
+  <img s<img width="862" height="487" alt="Screenshot 2026-10-30 131324" src="https://github.com/user-attachments/assets/60f76d2a-4bdf-4273-9d7b-919decf80399" />
+rc="project_outputs/plots/01_flights_histogram.png" width="750" alt="Distribution of Flights">
 </p>
 
 | **Description** | **Insight** |
@@ -152,7 +153,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 2. Histogram — Distribution of Documents
 
 <p align="center">
-  <img src="project_outputs/plots/02_documents_histogram.png" width="750" alt="Distribution of Documents">
+  <img <img width="856" height="477" alt="Screenshot 2026-10-30 131340" src="https://github.com/user-attachments/assets/d512acd7-3347-447b-bdb9-6f578f084298" />
+src="project_outputs/plots/02_documents_histogram.png" width="750" alt="Distribution of Documents">
 </p>
 
 | **Description** | **Insight** |
@@ -164,7 +166,9 @@ The following descriptions and insights are based on the visualization code in y
 ### 3. Scatter Plot — Flights vs. Documents
 
 <p align="center">
-  <img src="project_outputs/plots/03_flights_vs_documents.png" width="750" alt="Flights vs Documents">
+  <img <img width="862" height="485" alt="Screenshot 2026-10-30 131355" src="https://github.com/user-attachments/assets/b73a9d77-7f15-48bf-a913-43650b733443" />
+<img width="862" height="485" alt="Screenshot 2026-10-30 131355" src="https://github.com/user-attachments/assets/36c7f3b4-b454-46dc-871c-46361845052d" />
+src="project_outputs/plots/03_flights_vs_documents.png" width="750" alt="Flights vs Documents">
 </p>
 
 | **Description** | **Insight** |
@@ -176,7 +180,9 @@ The following descriptions and insights are based on the visualization code in y
 ### 4. Bar Chart — Missing Values in the Original Dataset
 
 <p align="center">
-  <img src="project_outputs/plots/04_missing_values.png" width="750" alt="Missing Values in Original Dataset">
+  <img <img width="981" height="477" alt="Screenshot 2026-10-30 131411" src="https://github.com/user-attachments/assets/1296dfeb-3a8e-41df-8bfd-640f77973cb2" />
+<img width="981" height="477" alt="Screenshot 2026-10-30 131411" src="https://github.com/user-attachments/assets/19f93d54-1331-4306-8dc7-d5b35bb3db9f" />
+src="project_outputs/plots/04_missing_values.png" width="750" alt="Missing Values in Original Dataset">
 </p>
 
 | **Description** | **Insight** |
@@ -188,7 +194,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 5. Bar Chart — Records by Category
 
 <p align="center">
-  <img src="project_outputs/plots/05_records_by_category.png" width="750" alt="Records by Category">
+  <img <img width="975" height="475" alt="Screenshot 2026-10-30 131424" src="https://github.com/user-attachments/assets/ac728c67-704d-4c35-bb6f-68d1b3066c59" />
+src="project_outputs/plots/05_records_by_category.png" width="750" alt="Records by Category">
 </p>
 
 | **Description** | **Insight** |
@@ -200,7 +207,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 6. Multivariate Scatter Plot — Flights, Documents, and Connections
 
 <p align="center">
-  <img src="project_outputs/plots/06_multivariate_scatter.png" width="750" alt="Flights, Documents, and Connections">
+  <img <img width="808" height="597" alt="Screenshot 2026-10-30 131438" src="https://github.com/user-attachments/assets/6c38e710-4166-418d-8c3c-c489954367ee" />
+src="project_outputs/plots/06_multivariate_scatter.png" width="750" alt="Flights, Documents, and Connections">
 </p>
 
 | **Description** | **Insight** |
@@ -212,7 +220,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 7. Correlation Heatmap — Flights, Documents, and Connections
 
 <p align="center">
-  <img src="project_outputs/plots/07_correlation_heatmap.png" width="750" alt="Correlation Heatmap">
+  <img <img width="732" height="602" alt="Screenshot 2026-10-30 131451" src="https://github.com/user-attachments/assets/f918b6c1-d6f2-408c-bfa4-6dd3a0c7b659" />
+src="project_outputs/plots/07_correlation_heatmap.png" width="750" alt="Correlation Heatmap">
 </p>
 
 | **Description** | **Insight** |
@@ -224,7 +233,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 8. Box Plots — Flights, Documents, and Connections
 
 <p align="center">
-  <img src="project_outputs/plots/08_boxplots.png" width="750" alt="Box Plots">
+  <img <img width="848" height="473" alt="Screenshot 2026-10-30 131503" src="https://github.com/user-attachments/assets/79c786cf-ccfa-4a68-8a58-1fe29df3939b" />
+src="project_outputs/plots/08_boxplots.png" width="750" alt="Box Plots">
 </p>
 
 | **Description** | **Insight** |
@@ -236,7 +246,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 9. Grouped Bar Chart — Mean Count Variables by Category
 
 <p align="center">
-  <img src="project_outputs/plots/09_mean_counts_by_category.png" width="750" alt="Mean Count Variables by Category">
+  <img <img width="1092" height="472" alt="Screenshot 2026-10-30 131515" src="https://github.com/user-attachments/assets/153bd9c6-1671-4585-bbc6-d1c1d244c56f" />
+src="project_outputs/plots/09_mean_counts_by_category.png" width="750" alt="Mean Count Variables by Category">
 </p>
 
 | **Description** | **Insight** |
@@ -248,7 +259,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 10. Principal Component Analysis (PCA) Plot
 
 <p align="center">
-  <img src="project_outputs/plots/10_pca_scatter.png" width="750" alt="Principal Component Analysis">
+  <img <img width="856" height="610" alt="Screenshot 2026-10-30 131526" src="https://github.com/user-attachments/assets/f6f37b3a-ae54-4f37-98ad-1b98beb10636" />
+src="project_outputs/plots/10_pca_scatter.png" width="750" alt="Principal Component Analysis">
 </p>
 
 | **Description** | **Insight** |
