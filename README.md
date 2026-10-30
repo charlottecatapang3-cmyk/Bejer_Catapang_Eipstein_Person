@@ -75,56 +75,190 @@ We retained the cleaned dataset in its readable form and created a separate mode
 We organized the visualization code using plot_functions and a loop that executes each plotting function. Every graph is saved as a PNG file in project_outputs/plots/, and its corresponding caption or interpretation is displayed. This made the visualization process more organized and consistent with our flowchart.
 
 
-# 🧹 PREPROCESSING SUMMARY
+### 🧹 PREPROCESSING SUMMARY
 
 Based on the flowchart for the project involving the Epstein Files – Persons of Interest List dataset, the following preprocessing steps were applied to prepare the dataset for analysis, machine learning, and visualization.
 
-### 1. Loading the Dataset
+**1. Loading the Dataset**
 
 Loaded the `epstein_persons_cleaned.csv` dataset using Pandas. Created the original dataset (`df_original`), working dataset (`df`), and cleaning copy (`clean`) to preserve the original data and facilitate preprocessing.
 
-### 2. Inspecting the Dataset
+**2. Inspecting the Dataset**
 
 Examined the dataset's dimensions, column names, data types, descriptive statistics, unique values, and missing-value counts to understand its structure and identify potential data quality issues before preprocessing.
 
-### 3. Handling Missing Values
+**3. Handling Missing Values**
 
 Checked the `Bio` and `Nationality` columns for missing values. If missing values were present, replace missing `Bio` values with `"Not available"` and missing `Nationality` values with `"Unknown"`. If no missing values were found in these columns, the existing values were retained.
 
-### 4. Removing Duplicate Rows
+**4. Removing Duplicate Rows**
 
 Checked the dataset for exact duplicate rows. If duplicates were found, remove them using duplicate-removal procedures and reset the index. Repeated values in the `Name` column were reported separately and were not automatically removed because identical names do not necessarily indicate duplicate records. If no exact duplicate rows were found, all records were retained.
 
-### 5. Fixing Data Types
+**5. Fixing Data Types**
 
 Convert the `Flights`, `Documents`, and `Connections` columns into numeric data types using `pd.to_numeric(errors="coerce")`. This ensured that the numerical variables could be used for statistical analysis and visualization. Any missing values created by unsuccessful conversions were also reported.
 
-### 6. Detecting and Assessing Outliers
+**6. Detecting and Assessing Outliers**
 
 Used the Interquartile Range (IQR) method to identify potential outliers in `Flights`, `Documents`, and `Connections`. Values below the lower bound or above the upper bound were flagged and summarized. Detected outliers were retained unless they were independently verified as data-entry errors. If no outliers were detected, the observations were retained without modification.
 
-### 7. Encoding Categorical Variables
+**7. Encoding Categorical Variables**
 
 Converted categorical variables into numerical representations suitable for machine learning. Applied one-hot encoding to the `Category` and `Nationality` columns and converted `In Black Book` into an integer representation. These transformations allowed categorical information to be incorporated into the model-ready dataset.
 
-### 8. Scaling Numerical Features
+**8. Scaling Numerical Features**
 
 Applied `StandardScaler` to the `Flights`, `Documents`, and `Connections` columns. Created corresponding scaled columns to standardize the numerical features, giving them approximately zero means and unit standard deviations. The scaled numerical features were then combined with the encoded categorical features to prepare the model-ready dataset.
 
-### 9. Saving the Cleaned Dataset
+**9. Saving the Cleaned Dataset**
 
 Exported the cleaned dataset to `project_outputs/epstein_persons_cleaned.csv`. Also saved the encoded and scaled dataset to `project_outputs/model_ready_encoded_scaled.csv`. These files provided separate outputs for the cleaned data and the dataset prepared for machine learning.
 
-### 10. Preparing the Visualization Process
+**10. Preparing the Visualization Process**
 
 Created the `project_outputs/plots/` directory to store the generated visualizations. Defined the `plot_functions` list and the `save_plot()` helper function to organize the visualization workflow and facilitate saving the resulting plots.
 
-### 11. Generating Data Visualizations
+**11. Generating Data Visualizations**
 
 Generated ten visualizations to examine the distribution of numerical variables, missing data, categorical records, relationships among variables, and overall data structure. These included a histogram of Flights, a histogram of Documents, a scatter plot of Flights versus Documents, a missing-values plot of the original dataset, a records-by-category plot, a multivariate scatter plot of Flights, Documents, and Connections, a correlation heatmap of the numerical variables, box plots of Flights, Documents, and Connections, a plot of mean count variables by category, and a Principal Component Analysis (PCA) plot.
 
 Each visualization was formatted, saved as a PNG file in `project_outputs/plots/`, displayed, and closed, with its corresponding caption or insight printed.
 
-### 12. End of the Preprocessing Program
+**12. End of the Preprocessing Program**
 
 Completed the data preprocessing and visualization workflow after all ten visualizations had been generated and saved. The resulting cleaned dataset, model-ready dataset, and visualization files were prepared for further analysis and interpretation.
+
+---
+
+## 📊 DESCRIPTIONS AND INSIGHTS FOR THE 10 DATA VISUALIZATIONS
+
+The following descriptions and insights are based on the visualization code in your uploaded Jupyter Notebook for the Epstein Files – Persons of Interest List dataset. Each description explains what the plot presents, while each insight explains how the visualization can help interpret the data. The insights are phrased carefully because the presence of a record or a statistical relationship does not, by itself, establish wrongdoing.
+
+---
+
+### 1. Histogram — Distribution of Flights
+
+<p align="center">
+  <img src="project_outputs/plots/01_flights_histogram.png" width="750" alt="Distribution of Flights">
+</p>
+
+| **Description** | **Insight** |
+|---|---|
+| This histogram displays the distribution of flight counts among the individuals recorded in the dataset. The horizontal axis represents the number of flights, while the vertical axis represents the number of records within each interval. It helps identify common flight-count ranges and determine whether the distribution is concentrated at lower values or extends toward higher values. | The plot is intended to show whether most records have relatively low flight counts and whether a smaller number of records have substantially higher counts. If the distribution has a long right tail, the flight counts are positively skewed, meaning a few high values may influence the mean. The actual distribution should be confirmed by examining the generated histogram. |
+
+---
+
+### 2. Histogram — Distribution of Documents
+
+<p align="center">
+  <img src="project_outputs/plots/02_documents_histogram.png" width="750" alt="Distribution of Documents">
+</p>
+
+| **Description** | **Insight** |
+|---|---|
+| This histogram illustrates how document counts are distributed across the records. The horizontal axis represents the number of documents, and the vertical axis shows how many records fall within each interval. It helps reveal the concentration, spread, and possible skewness of the document-count variable. | The visualization can indicate whether document counts are concentrated among lower values or whether a small number of records have much higher counts. A long right tail would suggest that document counts vary considerably across records. This pattern can help identify unusually high values for further examination, but it does not explain why those counts differ. |
+
+---
+
+### 3. Scatter Plot — Flights vs. Documents
+
+<p align="center">
+  <img src="project_outputs/plots/03_flights_vs_documents.png" width="750" alt="Flights vs Documents">
+</p>
+
+| **Description** | **Insight** |
+|---|---|
+| This scatter plot examines the relationship between flight counts and document counts. Each point represents a record, with Flights on the horizontal axis and Documents on the vertical axis. The plot helps identify possible associations, clusters, and observations with unusually high values in either variable. | The Pearson correlation coefficient is calculated by the notebook to quantify the direction and strength of the linear relationship between Flights and Documents. A positive correlation indicates that higher flight counts tend to be associated with higher document counts, while a negative correlation indicates an inverse relationship. A value near zero suggests a weak linear association. However, correlation does not establish causation or explain the circumstances behind individual records. |
+
+---
+
+### 4. Bar Chart — Missing Values in the Original Dataset
+
+<p align="center">
+  <img src="project_outputs/plots/04_missing_values.png" width="750" alt="Missing Values in Original Dataset">
+</p>
+
+| **Description** | **Insight** |
+|---|---|
+| This bar chart presents the number of missing values in each column of the original dataset before preprocessing. Each bar corresponds to a column, and its height represents the number of missing cells. The visualization helps identify which variables contain incomplete information and may require data-cleaning procedures. | The `Bio` and `Nationality` columns contain missing entries in the supplied dataset. These missing values are addressed during preprocessing by replacing them with `"Not available"` and `"Unknown"`, respectively. Identifying missing values helps improve data completeness, although replacing missing entries does not recover the original information. |
+
+---
+
+### 5. Bar Chart — Records by Category
+
+<p align="center">
+  <img src="project_outputs/plots/05_records_by_category.png" width="750" alt="Records by Category">
+</p>
+
+| **Description** | **Insight** |
+|---|---|
+| This bar chart displays the number of records belonging to each category in the `Category` column. The horizontal axis represents the category labels, while the vertical axis indicates the number of records assigned to each category. It provides an overview of the dataset's categorical composition. | The chart helps determine which categories are most and least represented in the dataset. If some categories have considerably more records than others, the dataset may have an imbalanced category distribution. This imbalance should be considered when comparing categories or conducting further analysis. Category membership alone does not imply wrongdoing. |
+
+---
+
+### 6. Multivariate Scatter Plot — Flights, Documents, and Connections
+
+<p align="center">
+  <img src="project_outputs/plots/06_multivariate_scatter.png" width="750" alt="Flights, Documents, and Connections">
+</p>
+
+| **Description** | **Insight** |
+|---|---|
+| This multivariate scatter plot examines three numerical variables simultaneously. Flights is displayed on the horizontal axis, Documents on the vertical axis, and Connections are represented by the color of each point. This approach allows the relationships among the three count variables to be explored in a single visualization. | The plot can reveal whether records with higher flight counts also tend to have higher document counts or connection counts. Differences in point colors may help identify groups of observations with similar or contrasting connection counts. Points located far from the main concentration may warrant additional statistical examination. However, the visualization does not establish the nature or significance of any individual's connections. |
+
+---
+
+### 7. Correlation Heatmap — Flights, Documents, and Connections
+
+<p align="center">
+  <img src="project_outputs/plots/07_correlation_heatmap.png" width="750" alt="Correlation Heatmap">
+</p>
+
+| **Description** | **Insight** |
+|---|---|
+| This heatmap presents the Pearson correlation coefficients among Flights, Documents, and Connections. The variables appear along both axes, and each cell contains a coefficient ranging from −1 to +1. Values closer to +1 indicate stronger positive linear relationships, values closer to −1 indicate stronger negative linear relationships, and values near zero indicate weaker linear relationships. | The heatmap helps identify which pairs of numerical variables have the strongest and weakest linear associations. Strong positive correlations would indicate that two count variables tend to increase together, while weak correlations would suggest a less consistent linear relationship. The numerical coefficients displayed in the heatmap should be used to determine the actual strength and direction of these relationships. Correlation does not establish causation. |
+
+---
+
+### 8. Box Plots — Flights, Documents, and Connections
+
+<p align="center">
+  <img src="project_outputs/plots/08_boxplots.png" width="750" alt="Box Plots">
+</p>
+
+| **Description** | **Insight** |
+|---|---|
+| This visualization presents box plots for Flights, Documents, and Connections to compare their distributions, medians, variability, and potential outliers. Each box represents the interquartile range, while the line inside the box represents the median. The whiskers and individual points help reveal the spread of the observations and values that may be unusually high or low. | The box plots help identify which numerical variables have greater variability and which contain potential outliers. Variables with long upper whiskers or points above the main distribution may have a small number of unusually high counts. These observations should be examined carefully rather than automatically removed, since extreme values may be valid records. Because the variables may have different scales, their relative spreads should be interpreted with caution. |
+
+---
+
+### 9. Grouped Bar Chart — Mean Count Variables by Category
+
+<p align="center">
+  <img src="project_outputs/plots/09_mean_counts_by_category.png" width="750" alt="Mean Count Variables by Category">
+</p>
+
+| **Description** | **Insight** |
+|---|---|
+| This grouped bar chart compares the mean values of Flights, Documents, and Connections across the different categories in the dataset. The horizontal axis represents the category labels, and the vertical axis shows the mean count. Each category contains separate bars for the three numerical variables, allowing their average values to be compared across groups. | The chart helps identify categories with higher or lower average flight, document, and connection counts. Differences in the means may indicate that the numerical characteristics of the records vary across categories. However, the number of records in each category should also be considered, since categories with few observations may have means that are more sensitive to individual values. These differences are descriptive and do not establish the reasons behind the observed patterns. |
+
+---
+
+### 10. Principal Component Analysis (PCA) Plot
+
+<p align="center">
+  <img src="project_outputs/plots/10_pca_scatter.png" width="750" alt="Principal Component Analysis">
+</p>
+
+| **Description** | **Insight** |
+|---|---|
+| This PCA scatter plot represents the standardized Flights, Documents, and Connections variables in two dimensions using the first two principal components, PC1 and PC2. Each point represents a record, and the axis labels indicate the percentage of variance explained by each component. PCA reduces the dimensionality of the numerical data while retaining as much variation as possible in the selected components. | The plot helps reveal potential clusters, similarities, and unusual observations based on the combined patterns of the three standardized count variables. Points positioned close together have more similar representations in the two-dimensional PCA space, while widely separated points have more distinct representations. The percentages shown on the axes indicate how much of the total variation is captured by each component. Since the plot is exploratory, any apparent clusters or unusual points would require further analysis before drawing conclusions. |
+
+---
+
+###  Important Note
+
+These descriptions and insights are based on the notebook's plotting code and intended interpretations. Since the notebook's visualization cells do not contain saved execution outputs, the exact correlation coefficients, category rankings, distributions, and PCA variance percentages cannot be confirmed here. To make the insights specific to your results, use the actual generated plots and their printed captions rather than presenting the expected patterns as confirmed findings.
+
+
