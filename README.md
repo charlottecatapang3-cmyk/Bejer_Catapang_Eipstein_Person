@@ -222,8 +222,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 1. Histogram — Distribution of Flights
 
 <p align="center">
-  <img s<img width="862" height="487" alt="Screenshot 2026-10-30 131324" src="https://github.com/user-attachments/assets/60f76d2a-4bdf-4273-9d7b-919decf80399" />
-</p>
+  <img s<img width="862" height="487" alt="Screenshot 2026-10-30 131324"![Uploading output 1.png…]()
+
 
 | **Description** | **Insight** |
 |---|---|
