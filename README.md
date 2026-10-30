@@ -80,35 +80,51 @@ NO: After completing the tenth visualization, the loop stopped and the program p
 
 ### 🛠️ Changes We Made
 
+<p align="justify">
 As we developed our code, we made several adjustments to ensure that our flowchart accurately represented the final preprocessing and visualization process for the Epstein Files dataset.
+</p>
 
 **1. We preserved separate copies of the dataset.**
 
+<p align="justify">
 We used df_original to preserve the original CSV for comparison and missing-value analysis. We also created working copies, including df and clean, to perform preprocessing without modifying the original data. This allowed us to examine the original records and compare them with the cleaned dataset.
+</p>
 
 **2. We specified how missing values were handled.**
 
+<p align="justify">
 Instead of filling missing numerical values with the median and categorical values with the mode, we used explicit placeholders for missing text fields. Missing biographies were replaced with Not available, while missing nationalities were replaced with Unknown. This prevented us from assigning unsupported personal details to individuals.
+</p>
 
 **3. We improved duplicate checking and data-type validation.**
 
+<p align="justify">
 We focused on exact duplicate rows rather than removing records based only on repeated names. We also validated the Flights, Documents, and Connections columns as numerical variables. Descriptive fields remained textual, while In Black Book was treated as a Boolean variable. We additionally checked whether an unnecessary index column was present in the CSV.
+</p>
 
 **4. We revised our outlier-handling method.**
 
+<p align="justify">
 We used the IQR method to flag potential outliers rather than automatically capping or deleting them. Since the dataset contains count variables, unusually high values should be examined before being classified as errors. Retaining these values helped preserve potentially meaningful information.
+</p>
 
 **5. We finalized the ten required visualizations.**
 
+<p align="justify">
 We organized our visualization functions to cover numerical distributions, relationships among variables, missing values, category comparisons, potential outliers, and multivariate analysis. The ten plots include two histograms, a scatter plot, a missing-values bar chart, a category bar chart, a multivariate scatter plot, a correlation heatmap, box plots, a grouped category comparison, and a PCA scatter plot.
+</p>
 
 **6. We separated readable data from encoded and scaled data.**
 
+<p align="justify">
 We retained the cleaned dataset in its readable form and created a separate model-ready dataset. We applied one-hot encoding to Category and Nationality, converted In Black Book into an integer indicator, and used StandardScaler on the three numerical count variables. This allowed us to perform further numerical analysis without replacing the original counts in the cleaned dataset.
+</p>
 
 **7. We added captions and automatic figure saving.**
 
+<p align="justify">
 We organized the visualization code using plot_functions and a loop that executes each plotting function. Every graph is saved as a PNG file in project_outputs/plots/, and its corresponding caption or interpretation is displayed. This made the visualization process more organized and consistent with our flowchart.
+</p>
 
 
 ### 🧹 PREPROCESSING SUMMARY
