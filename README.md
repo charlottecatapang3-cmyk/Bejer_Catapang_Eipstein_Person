@@ -235,9 +235,9 @@ The following descriptions and insights are based on the visualization code in y
 ### 2. Histogram — Distribution of Documents
 
 <p align="center">
-  <img <img width="856" height="477" alt="Screenshot 2026-10-30 131340" src="https://github.com/user-attachments/assets/d512acd7-3347-447b-bdb9-6f578f084298" />
-</p>
+  <img  <img width="937" height="590" alt="output 2" src="https://github.com/user-attachments/assets/7adfad5f-3c58-4fec-b67d-013f34901d2e" />
 
+    
 | **Description** | **Insight** |
 |---|---|
 | <p align="justify">This histogram illustrates how document counts are distributed across the records. The horizontal axis represents the number of documents, and the vertical axis shows how many records fall within each interval. It helps reveal the concentration, spread, and possible skewness of the document-count variable.</p> | <p align="justify">The visualization can indicate whether document counts are concentrated among lower values or whether a small number of records have much higher counts. A long right tail would suggest that document counts vary considerably across records. This pattern can help identify unusually high values for further examination, but it does not explain why those counts differ.</p> |
@@ -247,8 +247,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 3. Scatter Plot — Flights vs. Documents
 
 <p align="center">
-  <img <img width="862" height="485" alt="Screenshot 2026-10-30 131355" src="https://github.com/user-attachments/assets/36c7f3b4-b454-46dc-871c-46361845052d" />
-</p>
+  <img <img width="929" height="684" alt="output 3" src="https://github.com/user-attachments/assets/e2b6845b-4fcb-4164-afe9-d3a0c0f624b3" />
+
 
 | **Description** | **Insight** |
 |---|---|
@@ -259,8 +259,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 4. Bar Chart — Missing Values in the Original Dataset
 
 <p align="center">
-  <img <img width="981" height="477" alt="Screenshot 2026-10-30 131411"src="https://github.com/user-attachments/assets/19f93d54-1331-4306-8dc7-d5b35bb3db9f" />
-</p>
+  <img <img width="1264" height="684" alt="output 4" src="https://github.com/user-attachments/assets/c26af99d-ce21-482b-a5e4-3f0fcc342f9b" />
+
 
 | **Description** | **Insight** |
 |---|---|
@@ -271,8 +271,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 5. Bar Chart — Records by Category
 
 <p align="center">
-  <img <img width="975" height="475" alt="Screenshot 2026-10-30 131424" src="https://github.com/user-attachments/assets/ac728c67-704d-4c35-bb6f-68d1b3066c59" />
-</p>
+  <img <img width="1057" height="684" alt="output 5" src="https://github.com/user-attachments/assets/a4fe4750-7da5-4a28-b900-573cc689f49f" />
+
 
 | **Description** | **Insight** |
 |---|---|
@@ -283,8 +283,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 6. Multivariate Scatter Plot — Flights, Documents, and Connections
 
 <p align="center">
-  <img <img width="808" height="597" alt="Screenshot 2026-10-30 131438" src="https://github.com/user-attachments/assets/6c38e710-4166-418d-8c3c-c489954367ee" />
-</p>
+  <img <img width="1123" height="778" alt="output 6" src="https://github.com/user-attachments/assets/648c4e43-75ff-4ea4-9e7a-3d0f07332a86" />
+
 
 | **Description** | **Insight** |
 |---|---|
@@ -295,8 +295,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 7. Correlation Heatmap — Flights, Documents, and Connections
 
 <p align="center">
-  <img <img width="732" height="602" alt="Screenshot 2026-10-30 131451" src="https://github.com/user-attachments/assets/f918b6c1-d6f2-408c-bfa4-6dd3a0c7b659" />
-</p>
+  <img <img width="822" height="686" alt="output 7" src="https://github.com/user-attachments/assets/75fe4c58-8876-449d-8430-02c2c4ef9fe3" />
+
 
 | **Description** | **Insight** |
 |---|---|
@@ -306,8 +306,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 8. Box Plots — Flights, Documents, and Connections
 
 <p align="center">
-  <img <img width="848" height="473" alt="Screenshot 2026-10-30 131503" src="https://github.com/user-attachments/assets/79c786cf-ccfa-4a68-8a58-1fe29df3939b" />
-</p>
+  <img <img width="984" height="684" alt="output 8" src="https://github.com/user-attachments/assets/7c18de7b-dc16-42bb-b0ff-f390dd2156c6" />
+
 
 | **Description** | **Insight** |
 |---|---|
@@ -318,8 +318,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 9. Grouped Bar Chart — Mean Count Variables by Category
 
 <p align="center">
-  <img <img width="1092" height="472" alt="Screenshot 2026-10-30 131515" src="https://github.com/user-attachments/assets/153bd9c6-1671-4585-bbc6-d1c1d244c56f" />
-</p>
+  <img <img width="1353" height="778" alt="output 9" src="https://github.com/user-attachments/assets/f9229784-3aaa-4718-bab5-caeca0d3e6a8" />
+
 
 | **Description** | **Insight** |
 |---|---|
@@ -330,8 +330,8 @@ The following descriptions and insights are based on the visualization code in y
 ### 10. Principal Component Analysis (PCA) Plot
 
 <p align="center">
-  <img <img width="856" height="610" alt="Screenshot 2026-10-30 131526" src="https://github.com/user-attachments/assets/f6f37b3a-ae54-4f37-98ad-1b98beb10636" />
-</p>
+  <img <img width="1106" height="781" alt="output 10" src="https://github.com/user-attachments/assets/40415c30-51ee-4e89-af2b-a3b017f8f3e5" />
+
 
 | **Description** | **Insight** |
 |---|---|
