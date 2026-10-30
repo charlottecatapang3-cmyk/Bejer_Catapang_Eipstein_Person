@@ -33,20 +33,20 @@
 Our flowchart includes four main decision diamonds that guide how we prepare the Epstein Files dataset and generate the visualizations.
 
 **1. Missing Values?**
-
-We first checked whether the original dataset contained missing values. If missing values were found, we replaced missing entries in the Bio column with Not available and missing entries in the Nationality column with Unknown. This allowed us to preserve the records without inventing personal information. If no missing values were found in a particular column, its values remained unchanged.
+YES – Chosen: We found missing values in the Bio and Nationality columns. Instead of deleting entire rows, we filled the missing Bio values with "Not available" and the missing Nationality values with "Unknown". This allowed us to retain the records while addressing incomplete information.
+NO: Not applicable, since missing values were identified in the original dataset.
 
 **2. Duplicate Rows?**
-
-We checked for exact duplicate rows in the dataset. If duplicate records were found, we removed the additional copies while retaining the first occurrence. We also examined repeated names separately because individuals with the same name may have different categories, flight counts, document counts, or connections. Therefore, repeated names alone were not treated as duplicate records.
+YES – Chosen: We implemented drop_duplicates() to remove exact duplicate rows while retaining the first occurrence. We also checked repeated names separately because having the same name does not necessarily mean that two records are duplicates.
+NO: If no exact duplicate rows were found, the dataset would remain unchanged during this step.
 
 **3. Potential Outliers in Numerical Columns?**
-
-We applied the Interquartile Range (IQR) method to identify potential outliers in the Flights, Documents, and Connections columns. Values outside the calculated lower and upper limits were flagged for further examination. Instead of automatically removing or capping these values, we retained them because unusually high counts may represent legitimate observations in the dataset. Only values independently confirmed as data-entry errors would warrant correction.
+YES – Chosen: We used the Interquartile Range (IQR) method to identify and flag potential outliers in the Flights, Documents, and Connections columns. We decided to retain the flagged values instead of removing them because unusually high counts may still contain relevant information.
+NO: Proceed to the next preprocessing step without modifying the numerical values.
 
 **4. More Plots? (i < 10)**
-
-This decision controls the visualization loop. If i < 10 is true, the program executes the next visualization function in plot_functions, generates the graph, adds its title and axis labels, saves it as a PNG file, and displays its caption or interpretation. The counter then increases by one, and the condition is checked again. Once all ten visualizations have been generated, the loop ends.
+YES – Chosen: We continued the visualization loop until all ten required plots were generated, displayed, and saved as PNG files.
+NO: After completing the tenth visualization, the loop stopped and the program proceeded to the end.
 
 ---
 
