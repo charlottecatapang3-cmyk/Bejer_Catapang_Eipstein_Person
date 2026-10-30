@@ -358,31 +358,35 @@ Overall, the analysis reveals a dataset characterized by an uneven categorical d
 
 
 ## 7. How to Run
-
+<p align="justify">
 The project notebook is designed to run in Google Colab. Follow the steps below to reproduce the data preprocessing procedures, visualizations, and generated outputs for the Epstein Files – Bejer-Catapang project.
+</p>
 
 ### 1. Access the Google Colab Notebook
-
+<p align="justify">
 - Open the project repository and locate `Bejer_Catapang_Eipstein_Person.ipynb`.
 - Download the notebook and upload it to [Google Colab](https://colab.research.google.com/?utm_source=chatgpt.com).
+</p>
 
 ### 2. Prepare the Dataset
-
+<p align="justify">
 - Download the Epstein List – Persons of Interest dataset from [Kaggle](https://www.kaggle.com/datasets/wilomentena/epstein-list-persons-of-interest?utm_source=chatgpt.com).
 - The notebook uses `epstein-persons-2026-02-13_cleaned.csv`, which contains the information required for the data preprocessing procedures and visualizations.
 - Follow the notebook's dataset-loading instructions. If automatic dataset loading is unavailable, upload the CSV file when prompted by the notebook.
+</p>
 
 ### 3. Install Dependencies and Run the Notebook
-
+<p align="justify">
 - Make sure the required Python libraries are available in the Google Colab environment.
 - If dependency installation is required, install the packages listed in `requirements.txt`, including pandas, numpy, matplotlib, seaborn, and scikit-learn.
 - Execute the notebook cells sequentially, starting from the first cell.
 - Allow each section to finish before proceeding to the next one.
 
 The notebook performs dataset inspection, missing-value analysis and handling, duplicate checking, data-type verification, data cleaning, outlier detection, categorical analysis, feature preparation, and data saving.
+</p>
 
 ### 4. Review the Generated Results
-
+<p align="justify">
 After executing the notebook, review the generated visualizations and findings.
 
 - The notebook produces ten visualizations with corresponding descriptions and insights.
@@ -391,7 +395,7 @@ After executing the notebook, review the generated visualizations and findings.
 - Check the generated preprocessing summary for the actual dataset statistics and results.
 
 ### 5. Locate the Output Files
-
+<p align="justify">
 The notebook generates the following outputs:
 
 | File/Folder                               | Description                                                                        |
@@ -399,9 +403,10 @@ The notebook generates the following outputs:
 | `data/cleaned_epstein_persons.csv`        | Cleaned dataset after the preprocessing procedures.                                |
 | `data/encoded_scaled_epstein_persons.csv` | Processed dataset containing encoded and scaled numerical features, if applicable. |
 | `results/`                                | Generated visualizations, key findings, and preprocessing summaries.               |
+</p>
 
 ### 6. Verify the Results
-
+<p align="justify">
 Review the notebook's verification section to confirm that:
 
 - The generated CSV files can be loaded successfully.
@@ -410,4 +415,4 @@ Review the notebook's verification section to confirm that:
 - Numerical and categorical data are processed appropriately.
 - The original dataset remains unchanged.
 - The generated visualizations, results, and summary files are saved successfully.
-
+</p>
