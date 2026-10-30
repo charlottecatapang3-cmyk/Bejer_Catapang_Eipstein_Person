@@ -255,11 +255,6 @@ The following descriptions and insights are based on the visualization code in y
 |---|---|
 | This PCA scatter plot represents the standardized Flights, Documents, and Connections variables in two dimensions using the first two principal components, PC1 and PC2. Each point represents a record, and the axis labels indicate the percentage of variance explained by each component. PCA reduces the dimensionality of the numerical data while retaining as much variation as possible in the selected components. | The plot helps reveal potential clusters, similarities, and unusual observations based on the combined patterns of the three standardized count variables. Points positioned close together have more similar representations in the two-dimensional PCA space, while widely separated points have more distinct representations. The percentages shown on the axes indicate how much of the total variation is captured by each component. Since the plot is exploratory, any apparent clusters or unusual points would require further analysis before drawing conclusions. |
 
----
-
-###  Important Note
-
-These descriptions and insights are based on the notebook's plotting code and intended interpretations. Since the notebook's visualization cells do not contain saved execution outputs, the exact correlation coefficients, category rankings, distributions, and PCA variance percentages cannot be confirmed here. To make the insights specific to your results, use the actual generated plots and their printed captions rather than presenting the expected patterns as confirmed findings.
 
 ---
 
