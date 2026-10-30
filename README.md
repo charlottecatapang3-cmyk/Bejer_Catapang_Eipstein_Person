@@ -19,7 +19,15 @@
 
 
 ## 🔄 3. Flowchart
+- Embed your flowchart image here:
+  ```markdown
+  ![Preprocessing Flowchart](Eipsteinfiles_Flowchart_Bejer_Catapang.png)
+  ```
+  <p align="center"><<img width="1700" height="4960" alt="EipsteinFiles_Flowchart_Bejer_Catapang" src="https://github.com/user-attachments/assets/c1461d34-0701-48fa-aa99-6fe667916c59" />
+ 
 
+
+  
 ### 🧭 Decisions in Our Flowchart
 
 Our flowchart includes four main decision diamonds that guide how we prepare the Epstein Files dataset and generate the visualizations.
