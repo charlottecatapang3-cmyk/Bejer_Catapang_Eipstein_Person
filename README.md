@@ -32,23 +32,49 @@
   
 ### 🧭 Decisions in Our Flowchart
 
+<p align="justify">
 Our flowchart includes four main decision diamonds that guide how we prepare the Epstein Files dataset and generate the visualizations.
+</p>
 
 **1. Missing Values?**
+
+<p align="justify">
 YES – Chosen: We found missing values in the Bio and Nationality columns. Instead of deleting entire rows, we filled the missing Bio values with "Not available" and the missing Nationality values with "Unknown". This allowed us to retain the records while addressing incomplete information.
+</p>
+
+<p align="justify">
 NO: Not applicable, since missing values were identified in the original dataset.
+</p>
 
 **2. Duplicate Rows?**
+
+<p align="justify">
 YES – Chosen: We implemented drop_duplicates() to remove exact duplicate rows while retaining the first occurrence. We also checked repeated names separately because having the same name does not necessarily mean that two records are duplicates.
+</p>
+
+<p align="justify">
 NO: If no exact duplicate rows were found, the dataset would remain unchanged during this step.
+</p>
 
 **3. Potential Outliers in Numerical Columns?**
+
+<p align="justify">
 YES – Chosen: We used the Interquartile Range (IQR) method to identify and flag potential outliers in the Flights, Documents, and Connections columns. We decided to retain the flagged values instead of removing them because unusually high counts may still contain relevant information.
+</p>
+
+<p align="justify">
 NO: Proceed to the next preprocessing step without modifying the numerical values.
+</p>
 
 **4. More Plots? (i < 10)**
+
+<p align="justify">
 YES – Chosen: We continued the visualization loop until all ten required plots were generated, displayed, and saved as PNG files.
+</p>
+
+<p align="justify">
 NO: After completing the tenth visualization, the loop stopped and the program proceeded to the end.
+</p>
 
 ---
 
