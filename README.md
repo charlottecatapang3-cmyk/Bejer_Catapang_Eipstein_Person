@@ -213,7 +213,9 @@ Completed the data preprocessing and visualization workflow after all ten visual
 
 ## 📊 DESCRIPTIONS AND INSIGHTS FOR THE 10 DATA VISUALIZATIONS
 
+<p align="justify">
 The following descriptions and insights are based on the visualization code in your uploaded Jupyter Notebook for the Epstein Files – Persons of Interest List dataset. Each description explains what the plot presents, while each insight explains how the visualization can help interpret the data. The insights are phrased carefully because the presence of a record or a statistical relationship does not, by itself, establish wrongdoing.
+</p>
 
 ---
 
@@ -225,7 +227,7 @@ The following descriptions and insights are based on the visualization code in y
 
 | **Description** | **Insight** |
 |---|---|
-| This histogram displays the distribution of flight counts among the individuals recorded in the dataset. The horizontal axis represents the number of flights, while the vertical axis represents the number of records within each interval. It helps identify common flight-count ranges and determine whether the distribution is concentrated at lower values or extends toward higher values. | The plot is intended to show whether most records have relatively low flight counts and whether a smaller number of records have substantially higher counts. If the distribution has a long right tail, the flight counts are positively skewed, meaning a few high values may influence the mean. The actual distribution should be confirmed by examining the generated histogram. |
+| <p align="justify">This histogram displays the distribution of flight counts among the individuals recorded in the dataset. The horizontal axis represents the number of flights, while the vertical axis represents the number of records within each interval. It helps identify common flight-count ranges and determine whether the distribution is concentrated at lower values or extends toward higher values.</p> | <p align="justify">The plot is intended to show whether most records have relatively low flight counts and whether a smaller number of records have substantially higher counts. If the distribution has a long right tail, the flight counts are positively skewed, meaning a few high values may influence the mean. The actual distribution should be confirmed by examining the generated histogram.</p> |
 
 ---
 
@@ -237,7 +239,7 @@ The following descriptions and insights are based on the visualization code in y
 
 | **Description** | **Insight** |
 |---|---|
-| This histogram illustrates how document counts are distributed across the records. The horizontal axis represents the number of documents, and the vertical axis shows how many records fall within each interval. It helps reveal the concentration, spread, and possible skewness of the document-count variable. | The visualization can indicate whether document counts are concentrated among lower values or whether a small number of records have much higher counts. A long right tail would suggest that document counts vary considerably across records. This pattern can help identify unusually high values for further examination, but it does not explain why those counts differ. |
+| <p align="justify">This histogram illustrates how document counts are distributed across the records. The horizontal axis represents the number of documents, and the vertical axis shows how many records fall within each interval. It helps reveal the concentration, spread, and possible skewness of the document-count variable.</p> | <p align="justify">The visualization can indicate whether document counts are concentrated among lower values or whether a small number of records have much higher counts. A long right tail would suggest that document counts vary considerably across records. This pattern can help identify unusually high values for further examination, but it does not explain why those counts differ.</p> |
 
 ---
 
@@ -249,7 +251,7 @@ The following descriptions and insights are based on the visualization code in y
 
 | **Description** | **Insight** |
 |---|---|
-| This scatter plot examines the relationship between flight counts and document counts. Each point represents a record, with Flights on the horizontal axis and Documents on the vertical axis. The plot helps identify possible associations, clusters, and observations with unusually high values in either variable. | The Pearson correlation coefficient is calculated by the notebook to quantify the direction and strength of the linear relationship between Flights and Documents. A positive correlation indicates that higher flight counts tend to be associated with higher document counts, while a negative correlation indicates an inverse relationship. A value near zero suggests a weak linear association. However, correlation does not establish causation or explain the circumstances behind individual records. |
+| <p align="justify">This scatter plot examines the relationship between flight counts and document counts. Each point represents a record, with Flights on the horizontal axis and Documents on the vertical axis. The plot helps identify possible associations, clusters, and observations with unusually high values in either variable.</p> | <p align="justify">The Pearson correlation coefficient is calculated by the notebook to quantify the direction and strength of the linear relationship between Flights and Documents. A positive correlation indicates that higher flight counts tend to be associated with higher document counts, while a negative correlation indicates an inverse relationship. A value near zero suggests a weak linear association. However, correlation does not establish causation or explain the circumstances behind individual records.</p> |
 
 ---
 
@@ -261,7 +263,7 @@ The following descriptions and insights are based on the visualization code in y
 
 | **Description** | **Insight** |
 |---|---|
-| This bar chart presents the number of missing values in each column of the original dataset before preprocessing. Each bar corresponds to a column, and its height represents the number of missing cells. The visualization helps identify which variables contain incomplete information and may require data-cleaning procedures. | The `Bio` and `Nationality` columns contain missing entries in the supplied dataset. These missing values are addressed during preprocessing by replacing them with `"Not available"` and `"Unknown"`, respectively. Identifying missing values helps improve data completeness, although replacing missing entries does not recover the original information. |
+| <p align="justify">This bar chart presents the number of missing values in each column of the original dataset before preprocessing. Each bar corresponds to a column, and its height represents the number of missing cells. The visualization helps identify which variables contain incomplete information and may require data-cleaning procedures.</p> | <p align="justify">The `Bio` and `Nationality` columns contain missing entries in the supplied dataset. These missing values are addressed during preprocessing by replacing them with `"Not available"` and `"Unknown"`, respectively. Identifying missing values helps improve data completeness, although replacing missing entries does not recover the original information.</p> |
 
 ---
 
@@ -273,7 +275,7 @@ The following descriptions and insights are based on the visualization code in y
 
 | **Description** | **Insight** |
 |---|---|
-| This bar chart displays the number of records belonging to each category in the `Category` column. The horizontal axis represents the category labels, while the vertical axis indicates the number of records assigned to each category. It provides an overview of the dataset's categorical composition. | The chart helps determine which categories are most and least represented in the dataset. If some categories have considerably more records than others, the dataset may have an imbalanced category distribution. This imbalance should be considered when comparing categories or conducting further analysis. Category membership alone does not imply wrongdoing. |
+| <p align="justify">This bar chart displays the number of records belonging to each category in the `Category` column. The horizontal axis represents the category labels, while the vertical axis indicates the number of records assigned to each category. It provides an overview of the dataset's categorical composition.</p> | <p align="justify">The chart helps determine which categories are most and least represented in the dataset. If some categories have considerably more records than others, the dataset may have an imbalanced category distribution. This imbalance should be considered when comparing categories or conducting further analysis. Category membership alone does not imply wrongdoing.</p> |
 
 ---
 
@@ -285,7 +287,7 @@ The following descriptions and insights are based on the visualization code in y
 
 | **Description** | **Insight** |
 |---|---|
-| This multivariate scatter plot examines three numerical variables simultaneously. Flights is displayed on the horizontal axis, Documents on the vertical axis, and Connections are represented by the color of each point. This approach allows the relationships among the three count variables to be explored in a single visualization. | The plot can reveal whether records with higher flight counts also tend to have higher document counts or connection counts. Differences in point colors may help identify groups of observations with similar or contrasting connection counts. Points located far from the main concentration may warrant additional statistical examination. However, the visualization does not establish the nature or significance of any individual's connections. |
+| <p align="justify">This multivariate scatter plot examines three numerical variables simultaneously. Flights is displayed on the horizontal axis, Documents on the vertical axis, and Connections are represented by the color of each point. This approach allows the relationships among the three count variables to be explored in a single visualization.</p> | <p align="justify">The plot can reveal whether records with higher flight counts also tend to have higher document counts or connection counts. Differences in point colors may help identify groups of observations with similar or contrasting connection counts. Points located far from the main concentration may warrant additional statistical examination. However, the visualization does not establish the nature or significance of any individual's connections.</p> |
 
 ---
 
@@ -297,8 +299,7 @@ The following descriptions and insights are based on the visualization code in y
 
 | **Description** | **Insight** |
 |---|---|
-| This heatmap presents the Pearson correlation coefficients among Flights, Documents, and Connections. The variables appear along both axes, and each cell contains a coefficient ranging from −1 to +1. Values closer to +1 indicate stronger positive linear relationships, values closer to −1 indicate stronger negative linear relationships, and values near zero indicate weaker linear relationships. | The heatmap helps identify which pairs of numerical variables have the strongest and weakest linear associations. Strong positive correlations would indicate that two count variables tend to increase together, while weak correlations would suggest a less consistent linear relationship. The numerical coefficients displayed in the heatmap should be used to determine the actual strength and direction of these relationships. Correlation does not establish causation. |
-
+| <p align="justify">This heatmap presents the Pearson correlation coefficients among Flights, Documents, and Connections. The variables appear along both axes, and each cell contains a coefficient ranging from −1 to +1. Values closer to +1 indicate stronger positive linear relationships, values closer to −1 indicate stronger negative linear relationships, and values near zero indicate weaker linear relationships.</p> | <p align="justify">The heatmap helps identify which pairs of numerical variables have the strongest and weakest linear associations. Strong positive correlations would indicate that two count variables tend to increase together, while weak correlations would suggest a less consistent linear relationship. The numerical coefficients displayed in the heatmap should be used to determine the actual strength and direction of these relationships. Correlation does not establish causation.</p> |
 ---
 
 ### 8. Box Plots — Flights, Documents, and Connections
@@ -309,7 +310,7 @@ The following descriptions and insights are based on the visualization code in y
 
 | **Description** | **Insight** |
 |---|---|
-| This visualization presents box plots for Flights, Documents, and Connections to compare their distributions, medians, variability, and potential outliers. Each box represents the interquartile range, while the line inside the box represents the median. The whiskers and individual points help reveal the spread of the observations and values that may be unusually high or low. | The box plots help identify which numerical variables have greater variability and which contain potential outliers. Variables with long upper whiskers or points above the main distribution may have a small number of unusually high counts. These observations should be examined carefully rather than automatically removed, since extreme values may be valid records. Because the variables may have different scales, their relative spreads should be interpreted with caution. |
+| <p align="justify">This visualization presents box plots for Flights, Documents, and Connections to compare their distributions, medians, variability, and potential outliers. Each box represents the interquartile range, while the line inside the box represents the median. The whiskers and individual points help reveal the spread of the observations and values that may be unusually high or low.</p> | <p align="justify">The box plots help identify which numerical variables have greater variability and which contain potential outliers. Variables with long upper whiskers or points above the main distribution may have a small number of unusually high counts. These observations should be examined carefully rather than automatically removed, since extreme values may be valid records. Because the variables may have different scales, their relative spreads should be interpreted with caution.</p> |
 
 ---
 
@@ -321,7 +322,7 @@ The following descriptions and insights are based on the visualization code in y
 
 | **Description** | **Insight** |
 |---|---|
-| This grouped bar chart compares the mean values of Flights, Documents, and Connections across the different categories in the dataset. The horizontal axis represents the category labels, and the vertical axis shows the mean count. Each category contains separate bars for the three numerical variables, allowing their average values to be compared across groups. | The chart helps identify categories with higher or lower average flight, document, and connection counts. Differences in the means may indicate that the numerical characteristics of the records vary across categories. However, the number of records in each category should also be considered, since categories with few observations may have means that are more sensitive to individual values. These differences are descriptive and do not establish the reasons behind the observed patterns. |
+| <p align="justify">This grouped bar chart compares the mean values of Flights, Documents, and Connections across the different categories in the dataset. The horizontal axis represents the category labels, and the vertical axis shows the mean count. Each category contains separate bars for the three numerical variables, allowing their average values to be compared across groups.</p> | <p align="justify">The chart helps identify categories with higher or lower average flight, document, and connection counts. Differences in the means may indicate that the numerical characteristics of the records vary across categories. However, the number of records in each category should also be considered, since categories with few observations may have means that are more sensitive to individual values. These differences are descriptive and do not establish the reasons behind the observed patterns.</p> |
 
 ---
 
@@ -333,7 +334,7 @@ The following descriptions and insights are based on the visualization code in y
 
 | **Description** | **Insight** |
 |---|---|
-| This PCA scatter plot represents the standardized Flights, Documents, and Connections variables in two dimensions using the first two principal components, PC1 and PC2. Each point represents a record, and the axis labels indicate the percentage of variance explained by each component. PCA reduces the dimensionality of the numerical data while retaining as much variation as possible in the selected components. | The plot helps reveal potential clusters, similarities, and unusual observations based on the combined patterns of the three standardized count variables. Points positioned close together have more similar representations in the two-dimensional PCA space, while widely separated points have more distinct representations. The percentages shown on the axes indicate how much of the total variation is captured by each component. Since the plot is exploratory, any apparent clusters or unusual points would require further analysis before drawing conclusions. |
+| <p align="justify">This PCA scatter plot represents the standardized Flights, Documents, and Connections variables in two dimensions using the first two principal components, PC1 and PC2. Each point represents a record, and the axis labels indicate the percentage of variance explained by each component. PCA reduces the dimensionality of the numerical data while retaining as much variation as possible in the selected components.</p> | <p align="justify">The plot helps reveal potential clusters, similarities, and unusual observations based on the combined patterns of the three standardized count variables. Points positioned close together have more similar representations in the two-dimensional PCA space, while widely separated points have more distinct representations. The percentages shown on the axes indicate how much of the total variation is captured by each component. Since the plot is exploratory, any apparent clusters or unusual points would require further analysis before drawing conclusions.</p> |
 
 
 ---
