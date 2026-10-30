@@ -23,7 +23,7 @@
 ## 🔄 3. Flowchart
 - Embed your flowchart image here:
   ```markdown
-  ![Preprocessing Flowchart](Eipsteinfiles_Flowchart_Bejer_Catapang.png)
+  ![Preprocessing Flowchart](EipsteinFiles_Flowchart_Bejer_Catapang.png)
   ```
   <p align="center"><img width="1540" height="5114" alt="EipsteinFiles_Flowchart_Bejer_Catapang" src="https://github.com/user-attachments/assets/239a0415-750c-44ef-a92f-f0df58acc7d6" />
  
