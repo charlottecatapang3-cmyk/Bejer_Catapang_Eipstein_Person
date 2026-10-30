@@ -355,3 +355,60 @@ The following descriptions and insights are based on the visualization code in y
 <p align="justify">
 Overall, the analysis reveals a dataset characterized by an uneven categorical distribution, substantial missing information in the Nationality column, highly right-skewed numerical variables, and positive correlations among Flights, Documents, and Connections. The identification of potential outliers and the application of PCA further demonstrate the importance of examining data distributions and relationships before conducting additional analysis. These findings provide a statistical overview of the available records and should not be interpreted as evidence of wrongdoing or illegal involvement by any individual.
 </p>
+
+
+## 7. How to Run
+
+The project notebook is designed to run in Google Colab. Follow the steps below to reproduce the data preprocessing procedures, visualizations, and generated outputs for the Epstein Files – Bejer-Catapang project.
+
+### 1. Access the Google Colab Notebook
+
+- Open the project repository and locate `Bejer_Catapang_Eipstein_Person.ipynb`.
+- Download the notebook and upload it to [Google Colab](https://colab.research.google.com/?utm_source=chatgpt.com).
+
+### 2. Prepare the Dataset
+
+- Download the Epstein List – Persons of Interest dataset from [Kaggle](https://www.kaggle.com/datasets/wilomentena/epstein-list-persons-of-interest?utm_source=chatgpt.com).
+- The notebook uses `epstein-persons-2026-02-13_cleaned.csv`, which contains the information required for the data preprocessing procedures and visualizations.
+- Follow the notebook's dataset-loading instructions. If automatic dataset loading is unavailable, upload the CSV file when prompted by the notebook.
+
+### 3. Install Dependencies and Run the Notebook
+
+- Make sure the required Python libraries are available in the Google Colab environment.
+- If dependency installation is required, install the packages listed in `requirements.txt`, including pandas, numpy, matplotlib, seaborn, and scikit-learn.
+- Execute the notebook cells sequentially, starting from the first cell.
+- Allow each section to finish before proceeding to the next one.
+
+The notebook performs dataset inspection, missing-value analysis and handling, duplicate checking, data-type verification, data cleaning, outlier detection, categorical analysis, feature preparation, and data saving.
+
+### 4. Review the Generated Results
+
+After executing the notebook, review the generated visualizations and findings.
+
+- The notebook produces ten visualizations with corresponding descriptions and insights.
+- Review the key findings and interpretations presented in the notebook.
+- Examine the distribution of numerical variables, relationships between selected variables, categorical patterns, missing values, and other relevant characteristics of the dataset.
+- Check the generated preprocessing summary for the actual dataset statistics and results.
+
+### 5. Locate the Output Files
+
+The notebook generates the following outputs:
+
+| File/Folder                               | Description                                                                        |
+| ----------------------------------------- | ---------------------------------------------------------------------------------- |
+| `data/cleaned_epstein_persons.csv`        | Cleaned dataset after the preprocessing procedures.                                |
+| `data/encoded_scaled_epstein_persons.csv` | Processed dataset containing encoded and scaled numerical features, if applicable. |
+| `results/`                                | Generated visualizations, key findings, and preprocessing summaries.               |
+
+### 6. Verify the Results
+
+Review the notebook's verification section to confirm that:
+
+- The generated CSV files can be loaded successfully.
+- The expected columns are present in the cleaned dataset.
+- Missing values and duplicate records are handled according to the implemented preprocessing procedures.
+- Numerical and categorical data are processed appropriately.
+- The original dataset remains unchanged.
+- The generated visualizations, results, and summary files are saved successfully.
+
+Note: The filenames above should match the actual filenames and output paths implemented in your notebook.
