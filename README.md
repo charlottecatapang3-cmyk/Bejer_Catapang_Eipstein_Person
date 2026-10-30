@@ -341,16 +341,18 @@ The following descriptions and insights are based on the visualization code in y
 
 ## 🔑 Key Insights
 
-1. **Flight and document counts are highly concentrated at zero.** Approximately 92.4% of records have zero recorded flights, while 84.3% have zero recorded documents. This indicates that the numerical variables are strongly right-skewed, with a small number of records having substantially higher counts.
+1. **Flight and document counts are highly concentrated at zero.** <p align="justify">Approximately 92.4% of records have zero recorded flights, while 84.3% have zero recorded documents. This indicates that the numerical variables are strongly right-skewed, with a small number of records having substantially higher counts.</p>
 
-2. **The dataset is dominated by the associate category.** Of the 1,264 records, 801 belong to the associate category, followed by business with 146 and celebrity with 80. This uneven distribution should be considered when comparing categories and interpreting their statistical summaries.
+2. **The dataset is dominated by the associate category.** <p align="justify">Of the 1,264 records, 801 belong to the associate category, followed by business with 146 and celebrity with 80. This uneven distribution should be considered when comparing categories and interpreting their statistical summaries.</p>
 
-3. **Flights, documents, and connections have positive correlations.** Flights and Connections have the strongest correlation at approximately 0.884, followed by Documents and Connections at 0.789 and Flights and Documents at 0.691. These relationships suggest that higher recorded counts in one variable tend to occur alongside higher counts in another, although correlation does not imply causation.
+3. **Flights, documents, and connections have positive correlations.** <p align="justify">Flights and Connections have the strongest correlation at approximately 0.884, followed by Documents and Connections at 0.789 and Flights and Documents at 0.691. These relationships suggest that higher recorded counts in one variable tend to occur alongside higher counts in another, although correlation does not imply causation.</p>
 
-4. **Nationality information has substantial missingness.** The original dataset contains 743 missing nationality entries, making it the column with the greatest amount of missing information. Replacing these entries with `Unknown` allows the dataset to be processed more consistently but does not recover the missing nationality details.
+4. **Nationality information has substantial missingness.** <p align="justify">The original dataset contains 743 missing nationality entries, making it the column with the greatest amount of missing information. Replacing these entries with `Unknown` allows the dataset to be processed more consistently but does not recover the missing nationality details.</p>
 
-5. **A small number of records have unusually high numerical counts.** The maximum recorded values are 553 flights and 900 documents, while the median for Flights, Documents, and Connections is zero. PCA further shows that the first two principal components explain approximately 96.7% of the variance in the three standardized count variables, allowing most of their numerical variation to be represented in two dimensions.
+5. **A small number of records have unusually high numerical counts.** <p align="justify">The maximum recorded values are 553 flights and 900 documents, while the median for Flights, Documents, and Connections is zero. PCA further shows that the first two principal components explain approximately 96.7% of the variance in the three standardized count variables, allowing most of their numerical variation to be represented in two dimensions.</p>
 
 ---
 
+<p align="justify">
 Overall, the analysis reveals a dataset with uneven category representation, incomplete information, highly skewed numerical variables, and strong positive relationships among recorded counts. These findings describe patterns in the dataset and should not be interpreted as evidence of wrongdoing by any individual.
+</p>
