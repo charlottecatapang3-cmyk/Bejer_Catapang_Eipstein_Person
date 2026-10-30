@@ -365,12 +365,12 @@ The project notebook is designed to run in Google Colab. Follow the steps below 
 ### 1. Access the Google Colab Notebook
 <p align="justify">
 - Open the project repository and locate `Bejer_Catapang_Eipstein_Person.ipynb`.
-- Download the notebook and upload it to [Google Colab] https://colab.research.google.com/drive/1BwYS3QwYzbLiyra0j00z2T_GTRTkK1l2?usp=sharing.
+- Download the notebook and upload it to  hhttps://colab.research.google.com/drive/1BwYS3QwYzbLiyra0j00z2T_GTRTkK1l2?usp=sharing.
 </p>
 
 ### 2. Prepare the Dataset
 <p align="justify">
-- Download the Epstein List – Persons of Interest dataset from [Kaggle](https://www.kaggle.com/datasets/wilomentena/epstein-list-persons-of-interest?utm_source=chatgpt.com).
+- Download the Epstein List – Persons of Interest dataset from https://www.kaggle.com/datasets/wilomentena/epstein-list-persons-of-interest
 - The notebook uses `epstein-persons-2026-02-13_cleaned.csv`, which contains the information required for the data preprocessing procedures and visualizations.
 - Follow the notebook's dataset-loading instructions. If automatic dataset loading is unavailable, upload the CSV file when prompted by the notebook.
 </p>
