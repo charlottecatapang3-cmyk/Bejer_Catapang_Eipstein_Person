@@ -141,7 +141,6 @@ The following descriptions and insights are based on the visualization code in y
 
 <p align="center">
   <img s<img width="862" height="487" alt="Screenshot 2026-10-30 131324" src="https://github.com/user-attachments/assets/60f76d2a-4bdf-4273-9d7b-919decf80399" />
-rc="project_outputs/plots/01_flights_histogram.png" width="750" alt="Distribution of Flights">
 </p>
 
 | **Description** | **Insight** |
@@ -154,7 +153,6 @@ rc="project_outputs/plots/01_flights_histogram.png" width="750" alt="Distributio
 
 <p align="center">
   <img <img width="856" height="477" alt="Screenshot 2026-10-30 131340" src="https://github.com/user-attachments/assets/d512acd7-3347-447b-bdb9-6f578f084298" />
-src="project_outputs/plots/02_documents_histogram.png" width="750" alt="Distribution of Documents">
 </p>
 
 | **Description** | **Insight** |
@@ -167,7 +165,6 @@ src="project_outputs/plots/02_documents_histogram.png" width="750" alt="Distribu
 
 <p align="center">
   <img <img width="862" height="485" alt="Screenshot 2026-10-30 131355" src="https://github.com/user-attachments/assets/36c7f3b4-b454-46dc-871c-46361845052d" />
-src="project_outputs/plots/03_flights_vs_documents.png" width="750" alt="Flights vs Documents">
 </p>
 
 | **Description** | **Insight** |
@@ -180,7 +177,6 @@ src="project_outputs/plots/03_flights_vs_documents.png" width="750" alt="Flights
 
 <p align="center">
   <img <img width="981" height="477" alt="Screenshot 2026-10-30 131411"src="https://github.com/user-attachments/assets/19f93d54-1331-4306-8dc7-d5b35bb3db9f" />
-src="project_outputs/plots/04_missing_values.png" width="750" alt="Missing Values in Original Dataset">
 </p>
 
 | **Description** | **Insight** |
@@ -193,7 +189,6 @@ src="project_outputs/plots/04_missing_values.png" width="750" alt="Missing Value
 
 <p align="center">
   <img <img width="975" height="475" alt="Screenshot 2026-10-30 131424" src="https://github.com/user-attachments/assets/ac728c67-704d-4c35-bb6f-68d1b3066c59" />
-src="project_outputs/plots/05_records_by_category.png" width="750" alt="Records by Category">
 </p>
 
 | **Description** | **Insight** |
@@ -206,7 +201,6 @@ src="project_outputs/plots/05_records_by_category.png" width="750" alt="Records 
 
 <p align="center">
   <img <img width="808" height="597" alt="Screenshot 2026-10-30 131438" src="https://github.com/user-attachments/assets/6c38e710-4166-418d-8c3c-c489954367ee" />
-src="project_outputs/plots/06_multivariate_scatter.png" width="750" alt="Flights, Documents, and Connections">
 </p>
 
 | **Description** | **Insight** |
@@ -219,7 +213,6 @@ src="project_outputs/plots/06_multivariate_scatter.png" width="750" alt="Flights
 
 <p align="center">
   <img <img width="732" height="602" alt="Screenshot 2026-10-30 131451" src="https://github.com/user-attachments/assets/f918b6c1-d6f2-408c-bfa4-6dd3a0c7b659" />
-src="project_outputs/plots/07_correlation_heatmap.png" width="750" alt="Correlation Heatmap">
 </p>
 
 | **Description** | **Insight** |
@@ -232,7 +225,6 @@ src="project_outputs/plots/07_correlation_heatmap.png" width="750" alt="Correlat
 
 <p align="center">
   <img <img width="848" height="473" alt="Screenshot 2026-10-30 131503" src="https://github.com/user-attachments/assets/79c786cf-ccfa-4a68-8a58-1fe29df3939b" />
-src="project_outputs/plots/08_boxplots.png" width="750" alt="Box Plots">
 </p>
 
 | **Description** | **Insight** |
@@ -245,7 +237,6 @@ src="project_outputs/plots/08_boxplots.png" width="750" alt="Box Plots">
 
 <p align="center">
   <img <img width="1092" height="472" alt="Screenshot 2026-10-30 131515" src="https://github.com/user-attachments/assets/153bd9c6-1671-4585-bbc6-d1c1d244c56f" />
-src="project_outputs/plots/09_mean_counts_by_category.png" width="750" alt="Mean Count Variables by Category">
 </p>
 
 | **Description** | **Insight** |
@@ -258,7 +249,6 @@ src="project_outputs/plots/09_mean_counts_by_category.png" width="750" alt="Mean
 
 <p align="center">
   <img <img width="856" height="610" alt="Screenshot 2026-10-30 131526" src="https://github.com/user-attachments/assets/f6f37b3a-ae54-4f37-98ad-1b98beb10636" />
-src="project_outputs/plots/10_pca_scatter.png" width="750" alt="Principal Component Analysis">
 </p>
 
 | **Description** | **Insight** |
